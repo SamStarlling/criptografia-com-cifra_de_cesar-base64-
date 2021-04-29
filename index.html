@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Criptografia</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form div="container">
+    <section class="textoDigitado alinhamento">
+      <h2>Digite uma frase:</h2>
+      <input name=" entradaTexto" id="texto" required>
+    </section>
+
+    <section class="alinhamento selecao">
+      <select id="codificacao" required>
+        <option value="selecioneCodificacao" id='selecaoCodificacao' selected>Selecione a codificação</option>
+        <option value="CifraCesar" id="cifraCesar">Cifra de César</option>
+        <option value="Base64" id="base64">Base64</option>
+      </select>
+      <h2 id="infoIncremento" class='invisivel'>Adicione um número de incremento: </h2>
+      <input type="number" name="adicao" id="incremento" class='invisivel'>
+    </section>
+
+    <section div="radioBtn" class="alinhamento">
+      <section>
+        <label for="cod">Codifica</label>
+        <input type="radio" name="escolha" id="cod">
+
+        <label for="decod">Decodifica</label>
+        <input type="radio" name="escolha" id="decod">
+      </section>
+    </section>
+
+    <section div="envioBtn" class="alinhamento">
+      <button id="btnCod" class="btnEscolha invisivel">Codificar</button>
+      <button id="btnDecod" class="btnEscolha invisivel">Decodificar</button>
+    </section>
+
+    <section id="textoModidicado" class="alinhamento invisivel">
+      <p id="textoMod">
+        </h2>
+    </section>
+  </form>
+  <script src="criptografia.js"></script>
+</body>
+
+</html>
